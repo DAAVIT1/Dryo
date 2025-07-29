@@ -2,8 +2,33 @@
 <html lang="ka">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Dryo - Smart Dryer</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="ჭკვიანი საშრობი კარადა - Smart Dryer Application">
+    <meta name="keywords" content="dryer, smart, ჭკვიანი, საშრობი, კარადა">
+    <meta name="author" content="Dryo">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Dryo">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Dryo - Smart Dryer">
+    <meta property="og:description" content="ჭკვიანი საშრობი კარადა - Smart Dryer Application">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI2NCIgZmlsbD0idXJsKCNncmFkaWVudDApIi8+PHBhdGggZD0iTTI1NiAxNjBDMzEwLjY5IDE2MCAzNTYgMjA1LjMxIDM1NiAyNjBWMzAwQzM1NiAzNTQuNjkgMzEwLjY5IDQwMCAyNTYgNDAwQzIwMS4zMSA0MDAgMTU2IDM1NC42OSAxNTYgMzAwVjI2MEMxNTYgMjA1LjMxIDIwMS4zMSAxNjAgMjU2IDE2MFoiIGZpbGw9IiMyRUNDNzEiLz48cGF0aCBkPSJNMjU2IDIwMEMyODguNCAyMDAgMzE2IDIyNy42IDMxNiAyNjBWMzAwQzMxNiAzMzIuNCAyODguNCAzNjAgMjU2IDM2MEMyMjMuNiAzNjAgMTk2IDMzMi40IDE5NiAzMDBWMjYwQzE5NiAyMjcuNiAyMjMuNiAyMDAgMjU2IDIwMFoiIGZpbGw9IiMyN0FFNjAiLz48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNDgiIHI9IjI0IiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjI1NiIgeT0iMTI4IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7wn4yfPC90ZXh0PjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwIiB4MT0iMCIgeTE9IjAiIHgyPSI1MTIiIHkyPSI1MTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjNjY3RUVBIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzY0QkEyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PC9zdmc+">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNCIgZmlsbD0idXJsKCNncmFkaWVudDApIi8+CjxwYXRoIGQ9Ik0xNiAxMEMxOS4zIDEwIDIyIDEyLjcgMjIgMTZWMThDMjIgMjEuMyAxOS4zIDI0IDE2IDI0QzEyLjcgMjQgMTAgMjEuMyAxMCAxOFYxNkMxMCAxMi43IDEyLjcgMTAgMTYgMTBaIiBmaWxsPSIjMkVDQzcxIi8+CjxjaXJjbGUgY3g9IjE2IiBjeT0iMTUiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwIiB4MT0iMCIgeTE9IjAiIHgyPSIzMiIgeTI9IjMyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2NjdFRUEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzY0QkEyIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+">
+    <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9InVybCgjZ3JhZGllbnQwKSIvPgo8cGF0aCBkPSJNOTYgNjBDMTE2LjQgNjAgMTMzIDc2LjYgMTMzIDk3VjExM0MxMzMgMTMzLjQgMTE2LjQgMTUwIDk2IDE1MEM3NS42IDE1MCA1OSAxMzMuNCA1OSAxMTNWOTdDNTkgNzYuNiA3NS42IDYwIDk2IDYwWiIgZmlsbD0iIzJFQ0M3MSIvPgo8cGF0aCBkPSJNOTYgNzVDMTA4LjE1IDc1IDExOCA4NC44NSAxMTggOTdWMTEzQzExOCAxMjUuMTUgMTA4LjE1IDEzNSA5NiAxMzVDODMuODUgMTM1IDc0IDEyNS4xNSA3NCAxMTNWOTdDNzQgODQuODUgODMuODUgNzUgOTYgNzVaIiBmaWxsPSIjMjdBRTYwIi8+CjxjaXJjbGUgY3g9Ijk2IiBjeT0iOTUiIHI9IjgiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik05NiA0MEw4OCA0OEgxMDRMOTYgNDBaIiBmaWxsPSIjRkZGRkZGIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MCIgeDE9IjAiIHkxPSIwIiB4Mj0iMTkyIiB5Mj0iMTkyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2NjdFRUEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNzY0QkEyIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+">"
     <style>
         * {
             margin: 0;
@@ -509,6 +534,40 @@
             }
         }
 
+        /* Enhanced Mobile Performance */
+        .item-card, .category-btn {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Improved touch targets */
+        .item-card {
+            min-height: 48px;
+        }
+
+        .category-btn {
+            min-height: 44px;
+        }
+
+        /* Better loading state */
+        .item-card img {
+            transition: opacity 0.3s ease;
+        }
+
+        .item-card img[loading="lazy"] {
+            opacity: 0.7;
+        }
+
+        /* Performance optimization for transforms */
+        .item-card, .category-btn, .drying-screen, .main-screen {
+            will-change: transform;
+        }
+
         @media (max-width: 360px) {
             .container {
                 padding: 0;
@@ -721,8 +780,8 @@
             <!-- Auto Category -->
             <div class="items-container" id="auto">
                 <div class="category-title">
-                    <h2></h2>
-                    <p>ავტომობილის აქსესუარები და ნივთები</p>
+                    <h2>🚗 ავტო და სხვა</h2>
+                    <p>ავტომობილის აქსესუარები და სხვა ნივთები</p>
                 </div>
                 <div class="items-grid">
                     <div class="item-card" onclick="startDrying('ski_jacket', 30, '🎿 სკი ჯაკეტი', 'https://images.unsplash.com/photo-1551524164-6cf64f58b5fc?w=200&h=200&fit=crop&crop=center')">
@@ -1097,10 +1156,29 @@
             }
         }, { passive: false });
 
+        // Initialize default category
+        function initializeDefaultCategory() {
+            // Hide all categories first
+            const containers = document.querySelectorAll('.items-container');
+            containers.forEach(container => {
+                container.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show clothing category by default
+            document.getElementById('clothing').classList.add('active');
+            document.querySelector('[onclick="showCategory(\'clothing\')"]').classList.add('active');
+        }
+
         // Initialize app
         document.addEventListener('DOMContentLoaded', function() {
-            // Show default category
-            showCategory('clothing');
+            // Initialize default category
+            initializeDefaultCategory();
             
             // Preload images for better performance
             const images = document.querySelectorAll('img[loading="lazy"]');
